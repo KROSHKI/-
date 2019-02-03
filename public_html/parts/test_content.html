@@ -1,0 +1,48 @@
+<div class="container-fluid"><br></div>
+<div class="feature" id="content2">
+  <style media="screen">
+  #content2 {
+    --gradient_var_from: #de4f75;
+    --gradient_var_to: #f1c43f;
+    --photo_adress: url(../assets/images/kama.jpg);
+  }
+  .feature {
+    background-image: var(--photo_adress);
+  }
+  .feature:after {
+    background: -webkit-linear-gradient(top left, var(--gradient_var_from), var(--gradient_var_to));
+    background: -o-linear-gradient(top left, var(--gradient_var_from), var(--gradient_var_to));
+    background: linear-gradient(to bottom right, var(--gradient_var_from), var(--gradient_var_to));
+  }
+  .fbutton{
+    background: -webkit-linear-gradient(top left, var(--gradient_var_to), var(--gradient_var_from));
+  }
+  button:hover{
+    background: -webkit-linear-gradient(top left, var(--gradient_var_to), var(--gradient_var_to));
+  }
+  button:focus{
+    background: -webkit-linear-gradient(top left, var(--gradient_var_from), var(--gradient_var_from));
+  }
+  </style>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-6 toppad"><img src="/assets/images/placeholder.png"></div>
+      <div class="col-md-6 toppad">
+          <div class="row">
+          <div class="col-md-12 nametag"><h2>Название поста</h2></div>
+          <div class="col-md-12 announce">
+            <p style = "overflow: hidden;  width: 440px;  height: 216px;">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+            </p></div>
+          <div class="col-md-12 social"><div class="row">
+            <div class="col-md-4">	<button type="button" class="fbutton"><p class="fa fa-map-marker"></p></button>	</div>
+            <div class="col-md-4">	<button type="button" class="fbutton"><p class="fa fa-comments"></p></button>	</div>
+            <div class="col-md-4">	<button type="button" class="fbutton"><p class="fa fa-plus"></p></button>	</div>
+          </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

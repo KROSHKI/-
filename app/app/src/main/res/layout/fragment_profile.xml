@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Профиль"
+        android:textSize="30sp"
+        android:layout_centerInParent="true"/>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:orientation="vertical">-->
+
+        <!--<TextView-->
+            <!--android:id="@+id/text"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:textSize="30sp"-->
+            <!--android:textColor="@color/colorPrimaryDark"-->
+            <!--android:text="Добро пожаловать!"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/name"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:textStyle="bold"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:textSize="25sp"-->
+            <!--android:textColor="@color/colorBlack"-->
+            <!--android:text="Имя"/>-->
+        <!--<TextView-->
+            <!--android:id="@+id/email"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:gravity="center"-->
+            <!--android:textStyle="bold"-->
+            <!--android:textSize="25sp"-->
+            <!--android:text="Почта"/>-->
+        <!--<Button-->
+            <!--android:id="@+id/logout_btn"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_marginLeft="30dp"-->
+            <!--android:layout_marginRight="30dp"-->
+            <!--android:layout_marginTop="150dp"-->
+            <!--android:text="Выйти"/>-->
+    <!--</LinearLayout>-->
+</RelativeLayout>

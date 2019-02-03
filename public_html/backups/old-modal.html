@@ -1,0 +1,211 @@
+<!-- /parts/header.php-->
+
+<body>
+<nav class="nav" id="menu" style="display:block;">
+  <div class="wrap">
+    <div class="brand pull-left">
+      <img src="../assets/images/herb.png" alt="" />
+      <span>#Пермьчто? #Пермьгде? #Пермькогда?</span>
+    </div>
+      <button id="mobile-btn" class="hamburger-btn">
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+      <span class="hamburger-line"></span>
+    </button>
+    <ul class="top-menu pull-right" id="top-menu">
+      <li><a href="#home"><i class="fa fa-home" aria-hidden="true"></i></a></li>
+      <li><a href="#down">#ЧТО</a></li>
+      <li><a href="/">#ГДЕ</a></li>
+      <li><a href="/where">#КОГДА</a></li>
+      <li><a href="#" class="md-trigger" data-modal="modal-1">ВОЙТИ</a></li>
+    </ul>
+    <style media="screen">
+    </style>
+    <div class="md-modal md-effect-1" id="modal-1">
+      <div class="md-content">
+        <h3>Вход</h3>
+        <div class="login">
+          <form action="/account/login" id="form" method="Post">
+          <input type="text" placeholder="Логин" name="login"><br>
+          <input type="password" placeholder="Пароль(Любимое слово)" name="password"><br>
+          <input type="checkbox" id="three5"><label for="three5">Запомнить меня</label>
+          <button type="submit" name="enter" value="Войти" class="md-close"><img src="../assets/images/log_reg.png"></button>
+          </form>
+        </div>
+        <div style="text-align:center;">
+          <strong><a href="/join" style="text-decoration: none;color:white;">Регистрация</a></strong> нового аккаунта
+        </div>
+      </div>
+    </div>
+    <div class="md-overlay"></div>
+
+  </div>
+</nav>
+
+
+<!-- /assests/css/log_modal.css -->
+
+.md-perspective,
+.md-perspective body {
+	height: 100%;
+	overflow: hidden;
+}
+
+.md-perspective body  {
+	background: #222;
+	-webkit-perspective: 600px;
+	-moz-perspective: 600px;
+	perspective: 600px;
+}
+
+.container {
+	background: white;
+	min-height: 100%;
+}
+
+.md-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 50%;
+	max-width: 330px;
+	min-width: 250px;
+	height: auto;
+	z-index: 2000;
+	visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transform: translateX(-50%) translateY(-50%);
+	-moz-transform: translateX(-50%) translateY(-50%);
+	-ms-transform: translateX(-50%) translateY(-50%);
+	transform: translateX(-50%) translateY(-50%);
+}
+
+.md-show {
+	visibility: visible;
+}
+
+.md-overlay {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	visibility: hidden;
+	top: 0;
+	left: 0;
+	z-index: 1000;
+	opacity: 0;
+	background: rgba(31, 30, 30, 0.8);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show ~ .md-overlay {
+	opacity: 1;
+	visibility: visible;
+}
+
+/* Основание */
+
+.md-content {
+	color: #fff;
+	background: #0a0a0a;
+	position: relative;
+	border-radius: 3px;
+	margin: 0 auto;
+}
+
+.md-content h3 {
+	margin: 0;
+	padding: 0.4em;
+	text-align: center;
+	font-size: 2.4em;
+	font-weight: 300;
+	opacity: 0.8;
+	background: #242424;
+	border-radius: 3px 3px 0 0;
+}
+
+.md-content > div {
+	padding: 15px 40px 30px;
+	margin: 0;
+	font-weight: 300;
+	font-size: 1.15em;
+}
+
+.md-content > div p {
+	margin: 0;
+	padding: 10px 0;
+}
+
+.md-content > div ul {
+	margin: 0;
+	padding: 0 0 30px 20px;
+}
+
+.md-content > div ul li {
+	padding: 5px 0;
+}
+
+.md-effect-1 .md-content {
+	-webkit-transform: scale(0.7);
+	-moz-transform: scale(0.7);
+	-ms-transform: scale(0.7);
+	transform: scale(0.7);
+	opacity: 0;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.md-show.md-effect-1 .md-content {
+	-webkit-transform: scale(1);
+	-moz-transform: scale(1);
+	-ms-transform: scale(1);
+	transform: scale(1);
+	opacity: 1;
+}
+
+
+/* Effect 17:  Slide in from bottom with perspective on container */
+.md-show.md-effect-17 ~ .container {
+	height: 100%;
+	overflow: hidden;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+}
+
+.md-show.md-effect-17 ~ .container,
+.md-show.md-effect-17 ~ .md-overlay  {
+	-webkit-transform: rotateX(-2deg);
+	-moz-transform: rotateX(-2deg);
+	-ms-transform: rotateX(-2deg);
+	transform: rotateX(-2deg);
+	-webkit-transform-origin: 50% 0%;
+	-moz-transform-origin: 50% 0%;
+	transform-origin: 50% 0%;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.md-effect-17 .md-content {
+	opacity: 0;
+	-webkit-transform: translateY(200%);
+	-moz-transform: translateY(200%);
+	-ms-transform: translateY(200%);
+	transform: translateY(200%);
+}
+
+.md-show.md-effect-17 .md-content {
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+	opacity: 1;
+	-webkit-transition: all 0.3s 0.2s;
+	-moz-transition: all 0.3s 0.2s;
+	transition: all 0.3s 0.2s;
+}

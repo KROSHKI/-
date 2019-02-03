@@ -1,0 +1,21 @@
+SetEnvIf X-HTTPS 1 HTTPS
+RewriteEngine On
+RewriteBase /
+RewriteRule ^/.htaccess$ - [G]
+RewriteCond %{HTTP:X-HTTPS} !1
+RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
+RewriteRule ^.*$ index.php [NC,L]
+
+RewriteEngine On
+#RewriteBase /
+RewriteCond %{HTTP_HOST} ^(www.)?api\.пермьонлайн\.(рф|ru)$ 
+RewriteCond %{REQUEST_URI} !/api/ 
+RewriteRule ^(.*)$ /api/$1 [L]
+
+RewriteEngine On
+#RewriteBase /
+RewriteCond %{HTTP_HOST} ^(www.)?admin\.пермьонлайн\.(рф|ru)$ 
+RewriteCond %{REQUEST_URI} !/admin/ 
+RewriteRule ^(.*)$ /admin/$1 [L]
+php_value default_charset utf-8
+AddType 'text/html; charset=utf-8' .html .htm .shtml

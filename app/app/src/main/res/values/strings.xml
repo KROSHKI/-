@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">#Пермский край</string>
+    <string name="search_title">Поиск</string>
+    <!-- Меню -->
+    <string name="menu_item_places">Интересные места</string>
+    <string name="menu_item_history">История</string>
+    <string name="menu_item_events">События</string>
+    <string name="menu_item_profile">Профиль</string>
+    <!-- Бутер -->
+    <string name="view_navigation_open">Open</string>
+    <string name="view_navigation_close">Close</string>
+
+</resources>
